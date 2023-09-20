@@ -352,7 +352,24 @@ var tx=[];
     // la ejecución y retornar el string: "Se interrumpió la ejecución".
     // [PISTA]: utiliza el statement 'break'.
     // Tu código:
- }
+    var t=[];
+    var cont=num;
+    var st="Se interrunpio la ejecucion";
+     for (let index = 1; index <= 10; index++) {
+        cont=cont +2;
+        t[index]=cont;
+        console.log('Valor de i===>',index);
+        console.log('valor de CONTADOR===>',cont);
+         if (t[index]===index){
+            
+               break;
+            }
+           
+      }
+        return t;
+    }
+ var v= breakStatement(4);
+ console.log('Valor',v);
  
  function continueStatement(num) {
     // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
@@ -361,4 +378,25 @@ var tx=[];
     // se continua con la siguiente iteración.
     // [PISTA]: utiliza el statement 'continue'.
     // Tu código:
+    var cont=num;
+    var ar=[];
+    for (let index = 0; index < 10; index++) {
+      
+      if (index===5){
+         continue;
+
+      }else{
+         cont=cont + 2;
+         console.log('valor de index======>',index);
+         ar[index]=cont;
+         console.log('Valor de Ar===>',ar[index]);
+
+      }
+      
+      
+    }
+ return ar;
+
  }
+ var f= continueStatement(1);
+ console.log('Valor',f);
