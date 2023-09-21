@@ -25,3 +25,29 @@ atuendos['piernas'] = ['Bermudas', 'Pantalones'];
 console.log(atuendos);
 
 
+// DOT NOTATION
+var atuendos = { manos: ['Guantes', 'Anillos'], pies: ['Zapatos', 'Soquetes'] };
+
+// BRACKET NOTATION
+atuendos['piernas'] = ['Bermudas', 'Pantalones'];
+console.log(atuendos);
+
+
+
+var persona={};
+var persona={
+nombre: 'Jairo',
+apellidos:'Rincon Gututierrez',
+edad:41,
+estado:'casado',
+hijos:'2',
+esposa:'Helen',
+}
+
+var carro={};
+var carro={
+marca:'Ch0evrolet',
+tipo:'camioneta',
+color:'roja',
+}
+console.log(persona.nombre, persona.apellidos, 'tiene un Carro marca:',carro.marca, carro.tipo,'de color ',carro.color);
