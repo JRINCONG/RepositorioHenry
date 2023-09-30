@@ -56,3 +56,10 @@ while (arr.length < 5) {
    arr.push('Camilo');
 }
 console.log(arr);
+
+
+var numeros = [1, 2, 3, 4, 5], suma = 0;
+    forEach (numeros, function(numero){
+        suma += numero;
+    });
+    console.log(suma);
