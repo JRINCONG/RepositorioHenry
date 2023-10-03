@@ -69,27 +69,29 @@ class Persona {
        this.edad = edad;
     }
     saludar() {
-       console.log(
-          'Hola, mi nombre es  ' + this.nombre + '. Tengo  ' + this.edad
-       );
+       console.log('Hola, mi nombre es  ' + this.nombre + '. Tengo  ' + this.edad + ' Años');
     }
  }
  var mar = new Persona('Martin', 26);
  mar.saludar();
 
 
- class Programador extends Persona {
+ class Programador extends Persona { // con  este palabra extends lo que hacemos es dicirle a javaScript
+   // que vamos a extender la clase persona a la clase programador
     constructor(nombre, edad, añosDeExperiencia) {
-       super(nombre, edad);
+       super(nombre, edad);//con este palabra clave super lo que hacemos es decirle que vamos a utilizar 
+       // las prpiedades de la clase persona.
        this.añosDeExperiencia = añosDeExperiencia;
     }
     codear() {
        console.log('Soy ' + this.nombre +' . Codeo desde hace  ' + this.añosDeExperiencia +' años');
     }
+    
  }
  
  var mar = new Persona('Martín', 26);
- var programador = new Programador('María', 37, 4);
+ var programador = new Programador('María', 40, 4);
  mar.saludar();
  programador.codear();
+ programador.saludar();
 
