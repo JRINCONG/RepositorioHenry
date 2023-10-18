@@ -40,6 +40,8 @@ console.log(palabraArreglada);
 var numeros = [ 1, 2, 3, 4 ];
 numeros.forEach( (num) => { console.log(num) } )
 // MAP
+
+console.log('======= map =========');
 var numeros = [ 1, 2, 3, 4 ];
 var masUno = numeros.map( (num) => { return num + 1 } );
 console.log(masUno);

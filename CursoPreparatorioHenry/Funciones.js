@@ -5,9 +5,10 @@ function SumaTres(x){
 
 }
  
-//Función: cuidadoConElConsoleLog
+
 function cuidadoConElConsoleLog(nombre) {
     console.log(nombre);
     return nombre;
   }
-
+  
+  var x =SumaTres(20);
