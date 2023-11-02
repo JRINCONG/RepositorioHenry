@@ -7,6 +7,8 @@ function soloNumeros(array) {
     // Tu código aca:
     conta=0
     var num=[];
+    var x=Number.isInteger(array[5])
+    console.log(x)
     for(var i=0;i<array.length;i++){
          if (Number.isInteger(array[i])){
             console.log (array[i])
