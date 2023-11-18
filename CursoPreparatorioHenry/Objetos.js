@@ -90,9 +90,9 @@ console.log('============uso de la funcion THIS=================================
 
 //THIS
 var mascota = {
-    animal: 'Perro',
-    raza: 'Ovejero Alemán',
-    amistoso: true,
+    luna: 'false',
+    raza: 'true',
+    amistoso: 'true',
     dueño: 'María López',
     info: function () {
        console.log('Mi perro es un  ' + this.raza);
@@ -100,11 +100,90 @@ var mascota = {
  };
 
  mascota.info();
-
- for (const key in object) {
-    if (Object.hasOwnProperty.call(object, key)) {
-        const element = object[key];
-        
+ var conta=0
+ 
+ var invitados={
+    luna:{
+        vegan: false
+    },
+    andres:{
+        vegan: false
+    },
+    helen:{
+        vegan: false
+    },
+    jhosua:{
+        vegan: true
     }
  }
+
+ for (const key in invitados) {
+    console.log(invitados[key].vegan)
+    
+        if (invitados[key].vegan===true){
+            conta = conta+1;
+        };
+        
+ }
+ console.log(conta)
+
+function repite(f){
+console.log(f)
+var conta =1 
+var ct=0
+var r=[]
+for(i=0;i<f.length;i++){
+    if(f[i]===f[conta]){
+        r[ct]=f[i]
+        var ct=ct+1
+        
+           }
+           conta=conta+1
+}
+console.log(r)
+console.log(conta)
+console.log(ct)
+   
  
+ }
+var d=[1,2,3,4,1,1,1,1,1]
+var x=repite(d)
+console.log(x)
+ function personajes(perso){
+    var t=[]
+    var dt=[]
+    var ft=[]
+    var str=[]
+    console.log(perso)
+   var d=perso.map(function(x){
+           return x.split(' ').join(' ')
+   })
+   console.log(d)
+   var g=d.map(function(x){
+         if(x.includes('targaryen')){
+            return dt= x.join(' ')
+         }
+        
+   })
+    var ft=g.join('') + " of Hause Targaryen"
+   
+   str.push(ft.toUpperCase())
+   return str
+
+
+ }
+ var d=['jairo','show','Lannister']
+ var x= personajes(d)
+ console.log(x)
+
+
+ function ordenar(dat){
+    var dr= dat.join(' ')
+    var d= dr.trim()
+    return d
+
+
+ }
+ var d=[' jairo','show','Lannister!']
+ var x=ordenar(d)
+ console.log(x)

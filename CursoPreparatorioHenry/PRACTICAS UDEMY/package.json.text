@@ -1,0 +1,15 @@
+Actualización importante de la siguiente clase
+Nota Importante:
+En la siguiente clase en el minuto 3:26 observaras como aparece un archivo llamado package.json que tu no tendrás.
+
+Para poder obtener ese archivo lo único que tienes que hacer es ejecutar el comando de: npm init -y
+
+Con este comando te agregara el archivo de package.json que yo tengo.
+
+Después de esto ya podrás ejecutar el comando de npm install rollup
+
+
+
+Si tienes alguna duda con este paso puedes hacer una pregunta y con gusto te responderé.
+
+Saludos
